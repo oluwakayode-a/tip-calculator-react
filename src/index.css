@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body, * {
+    font-family: "Space Mono", monospace;
+}
+
+.form-control {
+    @apply w-full bg-gray-200 border-transparent focus:border-cyan-dark-gray focus:ring-offset-cyan-dark-gray focus:bg-white focus:ring-1;
+}
+
+.btn {
+    @apply rounded-md p-1 font-bold;
+}
+
+.btn-primary {
+    @apply bg-cyan-dark text-white hover:bg-primary hover:text-cyan-dark;
+}
+
+.btn-secondary {
+    @apply bg-primary text-cyan-dark hover:bg-cyan-light;
+}
